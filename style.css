@@ -1,0 +1,240 @@
+:root {
+  --bg-primary: rgb(18, 18, 42);
+  --bg-secondary: rgb(32, 33, 49);
+  --white: rgb(255, 255, 255);
+  --yellow: rgb(244, 185, 66);
+  --light-gray: rgb(69, 70, 83);
+
+  /* font family */
+  --ff-primary: "Raleway", Open Sans;
+  --ff-body: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  background-color: var(--bg-primary);
+  color: var(--white);
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.bg-dark,
+.navbar-dark {
+  background-color: var(--bg-primary) !important;
+}
+nav {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.btn-warning {
+  background-color: var(--yellow) !important;
+}
+.btn-warning:hover {
+  background-color: var(--white) !important;
+  border-bottom: none;
+}
+
+main {
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Specific Styles */
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav .nav-link {
+  color: var(--white) !important;
+  text-transform: uppercase;
+}
+
+header nav a:hover {
+  border-bottom: 2px solid var(--yellow) !important;
+}
+
+section#about-me h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+section#about-me p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* ======================
+      skills 
+======================  */
+.skills-item :hover {
+  background-color: var(--bg-secondary);
+  border-radius: 5px;
+}
+
+section#projects li {
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+section#projects li a {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section#projects li p {
+  margin-top: 10px;
+}
+
+section#contact-me form label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+section#contact-me form input[type="text"],
+section#contact-me form input[type="email"],
+section#contact-me form textarea {
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+section#contact-me form textarea {
+  height: 200px;
+}
+
+section#contact-me form button[type="submit"] {
+  background-color: #333;
+  color: #573131;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+section#projects .project-card {
+  display: flex;
+}
+
+section#projects .project-card img {
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+section#projects .project-details h3 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+section#projects .project-details p {
+  margin: 0;
+}
+
+section#projects .project-details .button {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* footer  */
+footer {
+  background-color: var(--bg-secondary);
+}
+.fab {
+  font-size: 1.5rem !important;
+  color: var(--light-gray);
+}
+.fab:hover {
+  color: var(--white);
+}
+
+/* for medium devices  */
+@media (max-width: 768px) {
+  header .pl-5 {
+    padding-left: 1rem !important;
+  }
+  .navbar-nav {
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .skills-item > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .skills-item .fa-solid {
+    margin-bottom: 1.5rem;
+  }
+  .skill-description {
+    margin: 0 !important;
+  }
+}
+/* for small devices */
+@media (max-width: 576px) {
+  header .pl-5 {
+    padding-left: 1rem !important;
+  }
+  .navbar-nav {
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .skills-item > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .skills-item .fa-solid {
+    margin-bottom: 1.5rem;
+  }
+  .skill-description {
+    margin: 0 !important;
+  }
+}
