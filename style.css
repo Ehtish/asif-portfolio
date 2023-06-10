@@ -69,7 +69,6 @@ nav {
 }
 .btn-warning:hover {
   background-color: var(--white) !important;
-  border-bottom: none;
 }
 
 main {
@@ -95,21 +94,25 @@ header nav ul {
   padding: 0;
 }
 
+/* ak styling  */
+.navbar-brand {
+  border: 2px solid var(--white);
+  border-radius: 100vmax;
+  padding: 4px 8px;
+}
+.navbar-brand:hover {
+  border-color: var(--yellow);
+}
 header nav .nav-link {
   color: var(--white) !important;
   text-transform: uppercase;
 }
-
-header nav a:hover {
-  border-bottom: 2px solid var(--yellow) !important;
+header nav .nav-link:hover {
+  /* border-bottom: 2px solid var(--yellow) !important; */
+  color: var(--yellow) !important;
 }
 
-section#about-me h2 {
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 10px;
-}
-
-section#about-me p {
+section#about p {
   font-size: 18px;
   margin: 0;
 }
@@ -128,56 +131,6 @@ section#about-me p {
 .card {
   background-color: var(--bg-secondary);
   /* color: var(--white); */
-}
-section#contact-me form label {
-  display: block;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-section#contact-me form input[type="text"],
-section#contact-me form input[type="email"],
-section#contact-me form textarea {
-  border: 2px solid #ddd;
-  border-radius: 4px;
-  font-size: 16px;
-  margin-bottom: 20px;
-  padding: 10px;
-  width: 100%;
-}
-
-section#contact-me form textarea {
-  height: 200px;
-}
-
-section#contact-me form button[type="submit"] {
-  background-color: #333;
-  color: #573131;
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-section#projects .project-card {
-  display: flex;
-}
-
-section#projects .project-card img {
-  border-radius: 4px;
-  margin-right: 20px;
-}
-
-section#projects .project-details h3 {
-  font-size: 24px;
-  margin: 0 0 10px;
-}
-
-section#projects .project-details p {
-  margin: 0;
-}
-
-section#projects .project-details .button {
-  display: inline-block;
-  margin-top: 10px;
 }
 
 /* footer  */
