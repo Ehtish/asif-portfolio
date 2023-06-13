@@ -10,7 +10,8 @@ html {
   --bg-primary: rgb(18, 18, 42);
   --bg-secondary: rgb(32, 33, 49);
   --white: rgb(255, 255, 255);
-  --yellow: rgb(244, 185, 66);
+  /* --yellow: rgb(244, 185, 66); */
+  --yellow: #4aadac;
   --light-gray: rgb(69, 70, 83);
 
   /* font family */
@@ -66,11 +67,16 @@ nav {
 
 .btn-warning {
   background-color: var(--yellow) !important;
+  border-color: var(--yellow) !important;
+  color: var(--white);
 }
 .btn-warning:hover {
-  background-color: var(--white) !important;
+  /* background-color: var(--white) !important; */
+  background-color: #80d7bb !important;
 }
-
+.text-warning {
+  color: var(--yellow) !important;
+}
 main {
   margin: 20px;
 }
@@ -131,6 +137,20 @@ section#about p {
 .card {
   background-color: var(--bg-secondary);
   /* color: var(--white); */
+}
+.card,
+.skills-item {
+  border: 2px solid var(--yellow);
+}
+.see-more {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
+}
+.see-more:hover {
+  text-decoration: none;
+  color: var(--yellow) !important;
+  border-bottom: 2px solid var(--yellow) !important;
 }
 
 /* footer  */
