@@ -42,12 +42,9 @@
             <a class="nav-link mx-1" href="#skills">skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-1" href="#about">about</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link mx-1" href="#contact">contact</a>
           </li>
-          <li><a href="#" class="btn btn-warning mx-2">Resume</a></li>
+          <li><a href="cv/asif_cv.pdf" target="_blank" class="btn btn-warning mx-2">Resume</a></li>
       </div>
     </nav>
   </header>
@@ -57,7 +54,7 @@
       <div class="row">
         <div class="col-md-6">
           <h2>Hi, I am <strong>Asif Kasi</strong></h2>
-          <h4 class="my-3"><strong>Python Engineer</strong> and <strong>Data Engineer</strong> </h4>
+          <h4 class="my-3">Professional <span id="typing-text"></span></h4>
           <p class="py-3">
             With over 2.5 years of experience as a <strong>Python Developer</strong>, I specialize in <strong>web
               scraping</strong>, <strong>web crawling</strong>, and <strong>automation</strong>. Leveraging powerful
@@ -115,7 +112,8 @@
             </div>
           </div>
           <div class="col-md-12 d-flex align-items-center justify-content-center my-5">
-            <a href="https://youtube.com/@asifkasi731" target="_blank" class="text-center see-more">See more <i class="fas fa-angle-right mx-1"></i></a>
+            <a href="https://youtube.com/@asifkasi731" target="_blank" class="text-center see-more">See more <i
+                class="fas fa-external-link-alt mx-1"></i></a>
           </div>
         </div>
       </div>
@@ -178,6 +176,20 @@
     <Section id="contact" class="my-5">
       <h2 class="text-center">Contact Me</h2>
       <div class="row justify-content-center mb-5">
+        <div class="col-lg-2">
+          <div class="boxes d-flex flex-column justify-content-center align-items-center my-2 py-1" >
+            <i class="fab fa-whatsapp fa-4x my-2"></i>
+            <P>Connect via whatsapp</P>
+          </div>
+          <div class="boxes d-flex flex-column justify-content-center align-items-center my-2 py-1">
+            <i class="fab fa-skype fa-4x my-2"></i>
+            <P>Connect via skype</P>
+          </div>
+          <div class="boxes d-flex flex-column justify-content-center align-items-center my-2 py-1">
+            <i class="far fa-envelope fa-4x my-2"></i>
+            <P>Connect via gmail</P>
+          </div>
+        </div>
         <div class="col-lg-6">
           <form>
             <div class="form-group">
@@ -195,6 +207,7 @@
             <button type="submit" class="btn btn-warning">Send</button>
           </form>
         </div>
+        
       </div>
     </Section>
     <!-- contact start  -->
@@ -340,6 +353,7 @@
     // Load the YouTube Player API
     loadYouTubePlayerAPI();
   </script>
+  <script src="js/typeWriter.js"></script>
 
 </body>
 

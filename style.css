@@ -118,9 +118,18 @@ header nav .nav-link:hover {
   color: var(--yellow) !important;
 }
 
+/* ======================
+      about
+======================  */
 section#about p {
   font-size: 18px;
   margin: 0;
+}
+#typing-text {
+  overflow: hidden; /* Hide overflowing text */
+  color: var(--yellow);
+  white-space: nowrap; /* Prevent line breaks */
+  margin: 0; /* Remove default margin */
 }
 
 /* ======================
@@ -138,7 +147,6 @@ section#about p {
   background-color: var(--bg-secondary);
   /* color: var(--white); */
 }
-.card,
 .skills-item {
   border: 2px solid var(--yellow);
 }
@@ -152,16 +160,31 @@ section#about p {
   color: var(--yellow) !important;
   border-bottom: 2px solid var(--yellow) !important;
 }
+#contact .boxes {
+  background-color: var(--bg-secondary);
+  border-radius: 15px;
+}
+#contact .far,
+#contact .fab {
+  color: var(--yellow);
+  cursor: pointer;
+}
+#contact .fab:hover {
+  color: var(--white);
+}
+#contact .far:hover {
+  color: var(--white);
+}
 
 /* footer  */
 footer {
   background-color: var(--bg-secondary);
 }
-.fab {
+footer .fab {
   font-size: 1.5rem !important;
   color: var(--light-gray);
 }
-.fab:hover {
+footer .fab:hover {
   color: var(--white);
 }
 
