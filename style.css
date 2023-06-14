@@ -187,6 +187,27 @@ footer .fab {
 footer .fab:hover {
   color: var(--white);
 }
+/* scroll to top */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--yellow);
+  color: var(--white);
+  cursor: pointer;
+  padding: 8px 18px;
+  border-radius: 50%;
+}
+
+#scrollTopBtn:hover {
+  background-color: #80d7bb;
+  color: #333;
+}
 
 /* for medium devices  */
 @media (max-width: 768px) {
