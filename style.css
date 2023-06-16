@@ -10,9 +10,9 @@ html {
   --bg-primary: rgb(18, 18, 42);
   --bg-secondary: rgb(32, 33, 49);
   --white: rgb(255, 255, 255);
-  /* --yellow: rgb(244, 185, 66); */
-  --yellow: #4aadac;
+  --aqua: rgb(74, 173, 172);
   --light-gray: rgb(69, 70, 83);
+  --active-aqua: rgb(128, 215, 187);
 
   /* font family */
   --ff-primary: "Raleway", Open Sans;
@@ -66,16 +66,16 @@ nav {
 }
 
 .btn-warning {
-  background-color: var(--yellow) !important;
-  border-color: var(--yellow) !important;
+  background-color: var(--aqua) !important;
+  border-color: var(--aqua) !important;
   color: var(--white);
 }
 .btn-warning:hover {
   /* background-color: var(--white) !important; */
-  background-color: #80d7bb !important;
+  background-color: var(--active-aqua) !important;
 }
 .text-warning {
-  color: var(--yellow) !important;
+  color: var(--aqua) !important;
 }
 main {
   margin: 20px;
@@ -107,15 +107,15 @@ header nav ul {
   padding: 4px 8px;
 }
 .navbar-brand:hover {
-  border-color: var(--yellow);
+  border-color: var(--aqua);
 }
 header nav .nav-link {
   color: var(--white) !important;
   text-transform: uppercase;
 }
 header nav .nav-link:hover {
-  /* border-bottom: 2px solid var(--yellow) !important; */
-  color: var(--yellow) !important;
+  /* border-bottom: 2px solid var(--aqua) !important; */
+  color: var(--aqua) !important;
 }
 
 /* ======================
@@ -127,7 +127,7 @@ section#about p {
 }
 #typing-text {
   overflow: hidden; /* Hide overflowing text */
-  color: var(--yellow);
+  color: var(--aqua);
   white-space: nowrap; /* Prevent line breaks */
   margin: 0; /* Remove default margin */
 }
@@ -148,7 +148,7 @@ section#about p {
   /* color: var(--white); */
 }
 .skills-item {
-  border: 2px solid var(--yellow);
+  border: 2px solid var(--aqua);
 }
 .see-more {
   cursor: pointer;
@@ -157,8 +157,8 @@ section#about p {
 }
 .see-more:hover {
   text-decoration: none;
-  color: var(--yellow) !important;
-  border-bottom: 2px solid var(--yellow) !important;
+  color: var(--aqua) !important;
+  border-bottom: 2px solid var(--aqua) !important;
 }
 #contact .boxes {
   background-color: var(--bg-secondary);
@@ -166,7 +166,7 @@ section#about p {
 }
 #contact .far,
 #contact .fab {
-  color: var(--yellow);
+  color: var(--aqua);
   cursor: pointer;
 }
 #contact .fab:hover {
@@ -197,7 +197,7 @@ footer .fab:hover {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: var(--yellow);
+  background-color: var(--aqua);
   color: var(--white);
   cursor: pointer;
   padding: 8px 18px;
@@ -205,7 +205,7 @@ footer .fab:hover {
 }
 
 #scrollTopBtn:hover {
-  background-color: #80d7bb;
+  background-color: var(--active-aqua);
   color: #333;
 }
 
