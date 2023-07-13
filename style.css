@@ -22,12 +22,6 @@ html {
   --fw-bold: 700;
 }
 /* General Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: var(--ff-body);
   font-size: var(--fs-body);
@@ -51,20 +45,6 @@ h6 {
   margin: 0;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-.bg-dark,
-.navbar-dark {
-  background-color: var(--bg-primary) !important;
-}
-nav {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-}
-
 .btn-warning {
   background-color: var(--aqua) !important;
   border-color: var(--aqua) !important;
@@ -82,7 +62,8 @@ main {
 }
 
 section {
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
+  padding-top: 50px;
 }
 
 ul {
@@ -92,7 +73,19 @@ ul {
 }
 
 /* Specific Styles */
-
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.bg-dark,
+.navbar-dark {
+  background-color: var(--bg-primary) !important;
+}
+nav {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
 header nav ul {
   display: flex;
   list-style: none;
